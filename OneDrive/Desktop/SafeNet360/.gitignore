@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# User and system folders
+OneDrive/
+Desktop/
+*.lnk
