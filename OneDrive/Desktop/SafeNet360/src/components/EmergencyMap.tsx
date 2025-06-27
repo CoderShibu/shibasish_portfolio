@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MapPin, AlertTriangle, CheckCircle, Clock } from 'lucide-react';
 
@@ -17,29 +16,29 @@ const EmergencyMap = () => {
     {
       id: '1',
       type: 'plane',
-      location: 'Los Angeles International Airport',
+      location: 'Indira Gandhi International Airport, Delhi',
       status: 'active',
       severity: 'high',
       time: '10 min ago',
-      coordinates: [34.0522, -118.2437]
+      coordinates: [28.5562, 77.1000]
     },
     {
       id: '2',
       type: 'train',
-      location: 'Penn Station, NYC',
+      location: 'Chhatrapati Shivaji Maharaj Terminus, Mumbai',
       status: 'investigating',
       severity: 'medium',
       time: '25 min ago',
-      coordinates: [40.7505, -73.9934]
+      coordinates: [18.9402, 72.8356]
     },
     {
       id: '3',
       type: 'bus',
-      location: 'Golden Gate Bridge',
+      location: 'Howrah Bridge, Kolkata',
       status: 'resolved',
       severity: 'low',
       time: '1 hour ago',
-      coordinates: [37.8199, -122.4783]
+      coordinates: [22.5850, 88.3468]
     }
   ]);
 

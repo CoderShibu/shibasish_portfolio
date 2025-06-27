@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { AlertTriangle, Camera, Mic, Send, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -149,7 +148,7 @@ const EmergencyForm = () => {
 
       <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
         <p className="text-sm text-yellow-800 dark:text-yellow-200">
-          <strong>For immediate life-threatening emergencies, call 911 directly.</strong> This form is for reporting transportation incidents that require monitoring and response coordination.
+          <strong>For immediate life-threatening emergencies in India, call 100 (Police), 102 (Ambulance), or 101 (Fire) directly.</strong> This form is for reporting transportation incidents that require monitoring and response coordination.
         </p>
       </div>
     </div>

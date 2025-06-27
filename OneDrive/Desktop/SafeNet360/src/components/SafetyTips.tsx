@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Shield, AlertCircle, Phone, Users } from 'lucide-react';
 
@@ -12,7 +11,7 @@ const SafetyTips = () => {
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Call for Help",
-      description: "Dial 911 for immediate emergencies. Use this platform for incident reporting."
+      description: "Dial 100 for Police, 102 for Ambulance, 101 for Fire in India. Use this platform for incident reporting."
     },
     {
       icon: <Users className="h-5 w-5" />,
@@ -22,7 +21,7 @@ const SafetyTips = () => {
     {
       icon: <AlertCircle className="h-5 w-5" />,
       title: "Stay Informed",
-      description: "Follow official emergency broadcasts and avoid spreading unverified information."
+      description: "Follow official government advisories and avoid spreading unverified information."
     }
   ];
 
@@ -30,7 +29,7 @@ const SafetyTips = () => {
     <div className="emergency-card p-6">
       <h3 className="text-lg font-semibold mb-4 flex items-center">
         <Shield className="h-5 w-5 mr-2 text-green-500" />
-        Emergency Safety Tips
+        Emergency Safety Tips (India)
       </h3>
       
       <div className="grid md:grid-cols-2 gap-4">

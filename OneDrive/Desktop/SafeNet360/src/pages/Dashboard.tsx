@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import AdminDashboard from '@/components/AdminDashboard';
@@ -18,10 +17,14 @@ const Dashboard = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Login attempt:', credentials);
-    // Simulate authentication
-    if (credentials.username && credentials.password) {
+    // Only allow login with the specified credentials
+    if (
+      credentials.username === 'admin@123' &&
+      credentials.password === '123'
+    ) {
       setIsAuthenticated(true);
+    } else {
+      alert('Invalid username or password.');
     }
   };
 
@@ -61,7 +64,7 @@ const Dashboard = () => {
               </form>
               
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">
-                Demo: Use any username/password to access
+                Demo: Username <b>admin@123</b> & Password <b>123</b>
               </p>
             </div>
           </div>

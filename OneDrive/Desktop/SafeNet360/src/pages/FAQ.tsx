@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -139,17 +138,6 @@ const FAQ = () => {
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             Find answers to common questions about SafeNet360 emergency monitoring platform
-          </p>
-        </div>
-
-        {/* Emergency Notice */}
-        <div className="emergency-card p-6 mb-8 gradient-alert text-white">
-          <div className="flex items-center mb-2">
-            <AlertTriangle className="h-5 w-5 mr-2" />
-            <h3 className="font-semibold">Emergency Notice</h3>
-          </div>
-          <p className="text-sm">
-            For immediate life-threatening emergencies, always call 911 first. SafeNet360 is designed to supplement, not replace, traditional emergency services.
           </p>
         </div>
 

@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
-import { Shield, Users, Globe, Zap, Heart, Award } from 'lucide-react';
+import { Shield, Users, Globe, Zap, Heart } from 'lucide-react';
 
 const About = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -114,33 +113,22 @@ const About = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center mb-8">Expert Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, index) => (
-              <div key={index} className="emergency-card p-6 text-center">
-                <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto mb-4"></div>
-                <h3 className="font-semibold">{member.name}</h3>
-                <p className="text-sm text-blue-600 dark:text-blue-400 mb-1">{member.role}</p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">{member.expertise}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Awards Section */}
-        <div className="emergency-card p-8 text-center">
-          <Award className="h-12 w-12 mx-auto mb-4 text-yellow-500" />
-          <h2 className="text-2xl font-bold mb-4">Recognition & Awards</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div>
-              <h3 className="font-semibold text-lg">Innovation in Safety Award</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">National Transportation Safety Board - 2023</p>
+            {/* Updated to show only the requested names */}
+            <div className="emergency-card p-6 text-center">
+              <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto mb-4"></div>
+              <h3 className="font-semibold">Shibasish Banerjee</h3>
             </div>
-            <div>
-              <h3 className="font-semibold text-lg">Emergency Response Excellence</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Emergency Management Association - 2023</p>
+            <div className="emergency-card p-6 text-center">
+              <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto mb-4"></div>
+              <h3 className="font-semibold">Limnisha Changkakati</h3>
             </div>
-            <div>
-              <h3 className="font-semibold text-lg">Technology for Good Award</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Tech Impact Summit - 2022</p>
+            <div className="emergency-card p-6 text-center">
+              <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto mb-4"></div>
+              <h3 className="font-semibold">Sanjana T G</h3>
+            </div>
+            <div className="emergency-card p-6 text-center">
+              <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto mb-4"></div>
+              <h3 className="font-semibold">Spandana S</h3>
             </div>
           </div>
         </div>

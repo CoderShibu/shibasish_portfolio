@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { Bell, Menu, X, Shield, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -10,6 +10,7 @@ interface HeaderProps {
 
 const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="emergency-card sticky top-0 z-50 border-b">
@@ -41,13 +42,23 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
             >
               {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
-            
-            <Button variant="ghost" size="sm" className="relative p-2">
+            <Button variant="ghost" size="sm" className="relative p-2" onClick={() => {
+              if (window.Notification && Notification.permission !== "denied") {
+                Notification.requestPermission().then(permission => {
+                  if (permission === "granted") {
+                    new Notification("SafeNet360", { body: "Notifications enabled!" });
+                  } else {
+                    alert("Notifications are blocked in your browser.");
+                  }
+                });
+              } else {
+                alert("Notifications are not supported or are blocked in your browser.");
+              }
+            }}>
               <Bell className="h-4 w-4" />
               <span className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse"></span>
             </Button>
-            
-            <Button variant="default" size="sm" className="hidden md:inline-flex">
+            <Button variant="default" size="sm" className="hidden md:inline-flex" onClick={() => navigate('/dashboard')}>
               Login
             </Button>
 
@@ -71,7 +82,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               <a href="/dashboard" className="hover:text-blue-600 transition-colors">Dashboard</a>
               <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
               <a href="/faq" className="hover:text-blue-600 transition-colors">FAQ</a>
-              <Button variant="default" size="sm" className="w-fit">
+              <Button variant="default" size="sm" className="w-fit" onClick={() => navigate('/dashboard')}>
                 Login
               </Button>
             </div>

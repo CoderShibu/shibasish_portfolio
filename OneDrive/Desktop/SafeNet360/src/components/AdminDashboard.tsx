@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { BarChart3, Users, MapPin, Clock, Filter, AlertTriangle, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -21,7 +20,7 @@ const AdminDashboard = () => {
     {
       id: '001',
       type: 'Aircraft Emergency',
-      location: 'LAX Airport',
+      location: 'Indira Gandhi International Airport, Delhi',
       status: 'ongoing',
       severity: 'high',
       time: '10 min ago',
@@ -30,7 +29,7 @@ const AdminDashboard = () => {
     {
       id: '002',
       type: 'Train Delay',
-      location: 'Penn Station',
+      location: 'Chhatrapati Shivaji Maharaj Terminus, Mumbai',
       status: 'new',
       severity: 'medium',
       time: '25 min ago'
@@ -38,7 +37,7 @@ const AdminDashboard = () => {
     {
       id: '003',
       type: 'Bus Breakdown',
-      location: 'Highway 101',
+      location: 'Howrah Bridge, Kolkata',
       status: 'closed',
       severity: 'low',
       time: '1 hour ago',
