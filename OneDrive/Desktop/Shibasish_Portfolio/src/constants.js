@@ -20,27 +20,6 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 
-// Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
-import mlsaLogo from './assets/company_logo/mlsa.jpeg';
-
-// Education Section Logo's
-// import glaLogo from './assets/education_logo/gla_logo.png';
-// import bsaLogo from './assets/education_logo/bsa_logo.png';
-// import vpsLogo from './assets/education_logo/vps_logo.png';
-// import kvLogo from './assets/education_logo/kv.jpeg';
-
-// Project Section Logo's
-// import githubdetLogo from './assets/work_logo/github_det.png';
-// import csprepLogo from './assets/work_logo/cs_prep.png';
-// import movierecLogo from './assets/work_logo/movie_rec.png';
-// import taskremLogo from './assets/work_logo/task_rem.png';
-// import npmLogo from './assets/work_logo/npm.png';
-// import webverLogo from './assets/work_logo/web_dig.png';
-// import cmLogo from './assets/work_logo/cm.png';
-// import imagesearchLogo from './assets/work_logo/image_search.png';
-// import removebgLogo from './assets/work_logo/remove_bg.png';
-
 
 export const SkillsInfo = [
   {
@@ -90,7 +69,6 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: mlsaLogo,
     role: "Social Media Volunteer",
     company: "Microsoft Learn Student Ambassador",
     date: "October 2024 - present",
@@ -99,7 +77,6 @@ export const experiences = [
   },
   {
     id: 1,
-    img: webverseLogo,
     role: "Technical Team Member",
     company: "Innov8 Club at CIT",
     date: "present",
@@ -118,7 +95,6 @@ export const experiences = [
     },
     {
       id: 1,
-      img: "https://drive.google.com/uc?export=view&id=1yJP1WOG2uiqvfeyH7PHA5NFgwnE53Z5H",
       school: "Cambridge Institute of Technology, Bengaluru",
       date: "Expected Completion: 2027",
       desc: "Gaining in-depth knowledge in software development, database systems, computer networks, and data structures. Curriculum includes full stack development, operating systems, cybersecurity fundamentals, and emerging technologies like AI/ML. Engaged in hands-on projects, hackathons, and coding communities to apply classroom learning in real-world scenarios.",
